@@ -1,0 +1,14 @@
+﻿@page
+@model UzenetKuldo.Pages.SajatEmailekModel
+@{
+    @foreach (var email in Tarhely.ElkuldottUzenetek)
+    {
+        if(email.Fogado == Tarhely.EmailCím)
+        {
+            string kiirtszoveg = email.Szoveg;
+            @kiirtszoveg
+
+            <br/>
+        }
+    }
+}
