@@ -1,0 +1,28 @@
+﻿@page
+@model UzenetKuldo.Pages.EmailKuldesModel
+
+
+Email küldése
+
+<form method="post">
+    <div>
+        <label for="Cím">Írd be az email címet, ahová üzenetek szeretnél küldeni</label>
+
+        <br/>
+
+        <input maxlength="200" type="email" id="Email" name="Email" asp-for="Email" />
+    </div>
+    <div>
+        <label for="Cím">Írd be az email szövegét!</label>
+
+        <br />
+
+        <input type="text" id="Szoveg" name="Szoveg" asp-for="Szoveg" />
+    </div>
+    <br />
+    <button type="submit">Email küldése</button>
+</form>
+
+
+@{
+}
